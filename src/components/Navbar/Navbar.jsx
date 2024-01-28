@@ -17,7 +17,7 @@ const Navbar = () => {
         <img className="w-[100px] h-[40px] " src={logoimg} alt="amazon-logo" />
 
         {/* large view deliver to country icon */}
-        <div className=" h-[60px] w-[120px] hidden md:flex flex-col justify-center items-center border-2 border-green-500">
+        <div className=" h-[60px] w-[120px] hidden md:flex flex-col justify-center items-center ">
           <span className="text-[#d6d6d6] font-semibold">Deliver To</span>
           <div className="flex text-white items-center">
             <SlLocationPin />
@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* large view sign in button */}
 
-        <div className="hidden md:block w-[180px] h-[60px] border-2 border-blue-500 text-white p-2 hover:cursor-pointer">
+        <div className="hidden md:block w-[180px] h-[60px]  text-white p-2 hover:cursor-pointer">
           <div className="text-sm">
             <span>Hello, </span>
             <span>Sign in</span>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {/* large view returns and orders section */}
 
-        <div className="hidden md:block w-[140px] h-[60px] border-2 border-yellow-500 text-white p-2 hover:cursor-pointer">
+        <div className="hidden md:block w-[140px] h-[60px] text-white p-2 hover:cursor-pointer">
           <div className="text-sm">
             <span>Returns </span>
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
         </button>
 
         {/* cart button */}
-        <div className="relative ms-3 md:w-[100px] md:h-[60px] border-2 border-red-500 md:flex items-center justify-center gap-1">
+        <div className="relative ms-3 md:w-[100px] md:h-[60px]  md:flex items-center justify-center gap-1">
           <FiShoppingCart className="text-white font-bold text-xl md:text-4xl" />
           <span className="text-white font-semibold text-lg hidden md:block">
             Cart
@@ -84,6 +84,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       {/* mobile view search bar */}
       <div className="block md:hidden w-full">
         <Searchbar />
