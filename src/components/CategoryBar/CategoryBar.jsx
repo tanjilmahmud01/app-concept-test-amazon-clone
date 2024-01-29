@@ -4,7 +4,7 @@ import "swiper/css";
 
 const CategoryBar = () => {
   return (
-    <div className="h-[40px] md:h-[50px] w-full bg-[#131921] md:bg-[#232f3e] flex justify-center md:hidden">
+    <div className="h-[50px] md:h-[50px] w-full bg-[#131921] md:bg-[#232f3e] flex justify-center items-center md:hidden ">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={15}

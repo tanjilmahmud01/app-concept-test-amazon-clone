@@ -8,11 +8,12 @@ import { SlLocationPin } from "react-icons/sl";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Searchbar from "./Searchbar";
 import enUsIcon from "../../assets/en-us-icon.png";
+import CategoryBar from "../CategoryBar/CategoryBar";
 
 const Navbar = () => {
   return (
     <div className="h-[150px] md:h-[100px] w-full bg-[#131921] md:flex justify-center">
-      <div className="h-[60px] md:h-[] flex items-center gap-2  p-2 border-2 border-white">
+      <div className="h-[60px] md:h-[] flex items-center gap-2  p-2 ">
         <RxHamburgerMenu className="text-3xl text-white block md:hidden" />
         <img className="w-[100px] h-[40px] " src={logoimg} alt="amazon-logo" />
 
@@ -88,6 +89,11 @@ const Navbar = () => {
       {/* mobile view search bar */}
       <div className="block md:hidden w-full">
         <Searchbar />
+      </div>
+
+      {/* mobile view category slider bar */}
+      <div className="block md:hidden w-full">
+        <CategoryBar />
       </div>
     </div>
   );
